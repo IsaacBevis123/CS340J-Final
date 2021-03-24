@@ -15,8 +15,11 @@ namespace KartGame
             // the respawnLocation for that player)
             if (other.gameObject.CompareTag("Player") && canFinish)
             {
-                // play end game animation
                 Debug.Log("You Won");
+
+                GameObject player = GameObject.FindWithTag("Player");
+                player.GetComponent<KartGame.KartSystems.ArcadeKart>().enabled = false;
+
             }
         }
     }

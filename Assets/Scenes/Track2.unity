@@ -1397,6 +1397,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1327839619}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &759458041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 759458042}
+  m_Layer: 0
+  m_Name: 1
+  m_TagString: CameraPath
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &759458042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759458041}
+  m_LocalRotation: {x: 0.11109559, y: -0.5320978, z: 0.070677914, w: 0.8363818}
+  m_LocalPosition: {x: 22.99, y: 6.27, z: -5.539999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1380236382}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 15.132, y: -64.928, z: 0}
 --- !u!4 &793133045 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7609577426192830089, guid: 291ac874e44fb46a1a05a1815cfc4f52,
@@ -2538,6 +2568,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 131325421}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1380236381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1380236382}
+  m_Layer: 0
+  m_Name: CamMovement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1380236382
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380236381}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.7238388, y: 0.25, z: 26.47}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 759458042}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1398487070 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4126308969757231546, guid: ea87863efa0b941408cdd4b102308f4c,
@@ -3002,6 +3063,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 131268930, guid: 9d433f68590268c42bd7e65f77e9d383, type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
     - target: {fileID: 2122874654, guid: 9d433f68590268c42bd7e65f77e9d383, type: 3}
       propertyPath: respawnLocation
       value: 
