@@ -9,6 +9,7 @@ TagManager:
   - MainMenu_Screen1
   - MainMenu_Screen2
   - MainMenu_Screen3
+  - EscMenu
   layers:
   - Default
   - TransparentFX
