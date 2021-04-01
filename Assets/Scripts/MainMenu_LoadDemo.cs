@@ -5,17 +5,35 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu_LoadDemo : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public GameObject MenuCam;
+    private GameObject mainCamera;
+    private UnityEngine.Video.VideoPlayer videoPlayer;
+
+    void Start()
+    {
+        mainCamera = GameObject.FindWithTag("MainCamera");
+
+        videoPlayer = mainCamera.AddComponent<UnityEngine.Video.VideoPlayer>();
+
+        // Make sure video doesnt start automatically.
+        videoPlayer.playOnAwake = false;
+
+        videoPlayer.isLooping = true;
+
+        // Make video invisible when not playing
+        videoPlayer.targetCameraAlpha = 0.0f;
+    }
 
     // Executes when cursor passes over the game object
     public void OnPointerEnter(PointerEventData data)
     {
         Debug.Log("name: " + name);
-        
+
         try
         {
-            SceneManager.LoadScene(name + "-Demo", LoadSceneMode.Additive);
-            MenuCam.SetActive(false);
+            videoPlayer.url = "Assets/Videos/" + name + ".mp4";
+
+            videoPlayer.targetCameraAlpha = 1.0f;
+            videoPlayer.Play();
         }
 
         catch (Exception e)
@@ -29,5 +47,7 @@ public class MainMenu_LoadDemo : MonoBehaviour, IPointerEnterHandler, IPointerEx
     public void OnPointerExit(PointerEventData data)
     {
         Debug.Log("leaving...");
+        videoPlayer.targetCameraAlpha = 0.0f;
+        videoPlayer.Stop();
     }
 }
