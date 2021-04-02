@@ -55,6 +55,10 @@ public class ArcadeKartPowerup : MonoBehaviour {
                 isCoolingDown = true;
 
                 if (disableGameObjectWhenActivated) this.gameObject.SetActive(false);
+
+                // play powerup sound
+                AudioSource audioData = GetComponent<AudioSource>();
+                audioData.Play(0);
             }
         }
     }
