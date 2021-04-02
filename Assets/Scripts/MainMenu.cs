@@ -87,6 +87,7 @@ namespace KartGame
         void onSelectTrack1()
         {
             Debug.Log("Loading track 1...");
+            SceneManager.LoadScene("Track1", LoadSceneMode.Single);
         }
 
         void onSelectTrack2()

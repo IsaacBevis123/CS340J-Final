@@ -969,7 +969,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8929f854a8f014d8342b62eccb2dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MenuCam: {fileID: 0}
 --- !u!1 &638214466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1870,7 +1869,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8929f854a8f014d8342b62eccb2dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MenuCam: {fileID: 0}
 --- !u!1 &1393684724
 GameObject:
   m_ObjectHideFlags: 0
@@ -1974,7 +1972,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <name of track1>
+  m_text: Block Town
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2063,7 +2061,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8929f854a8f014d8342b62eccb2dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MenuCam: {fileID: 0}
 --- !u!1 &1395092894
 GameObject:
   m_ObjectHideFlags: 0
@@ -2256,7 +2253,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8929f854a8f014d8342b62eccb2dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MenuCam: {fileID: 1148080174}
 --- !u!1 &1444020022
 GameObject:
   m_ObjectHideFlags: 0
@@ -2555,7 +2551,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8929f854a8f014d8342b62eccb2dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MenuCam: {fileID: 0}
 --- !u!1 &1818390064
 GameObject:
   m_ObjectHideFlags: 0
