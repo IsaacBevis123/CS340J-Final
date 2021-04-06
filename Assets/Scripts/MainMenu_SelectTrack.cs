@@ -37,6 +37,7 @@ public class MainMenu_SelectTrack : MonoBehaviour
     void onSelectTrack1()
     {
         Debug.Log("Loading track 1...");
+        SceneManager.LoadScene("Track1", LoadSceneMode.Single);
     }
 
     void onSelectTrack2()
@@ -48,6 +49,7 @@ public class MainMenu_SelectTrack : MonoBehaviour
     void onSelectTrack3()
     {
         Debug.Log("Loading track 3...");
+        SceneManager.LoadScene("Track3", LoadSceneMode.Single);
     }
 
     void onSelectTrack4()

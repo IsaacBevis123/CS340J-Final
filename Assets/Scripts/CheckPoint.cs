@@ -8,6 +8,7 @@ namespace KartGame
     {
         public GameObject respawnLocation;
         public bool isLast;
+        public bool isNonVoidMap;
 
         void OnTriggerEnter(Collider other)
         {
@@ -21,6 +22,13 @@ namespace KartGame
 
                 respawnLocation.transform.position = loc;
                 respawnLocation.transform.rotation = this.gameObject.transform.rotation;
+
+                if (isNonVoidMap)
+                {
+                    var newY = this.gameObject.transform.position.y - 5;
+                    GameObject player = GameObject.FindWithTag("Player");
+                    player.gameObject.GetComponent<KartGame.Respawn>().changeDeathline(newY);
+                }
             }
 
             if (isLast)
