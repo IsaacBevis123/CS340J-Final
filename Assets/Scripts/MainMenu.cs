@@ -91,9 +91,11 @@ namespace KartGame
 
         void onSelectConnect()
         {
+            InputField input = GameObject.Find("ip_input").GetComponent<InputField>();
+            string IP = input.text;
             // send connect request to the ip the user entered
             //      then connect to server once the server sends the "okay" signal
-            Debug.Log("Connect Button pressed");
+            Debug.Log("Connect Button pressed, IP is " + IP);
         }
 
         void onSelectTrack1()
