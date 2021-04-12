@@ -34,9 +34,13 @@ namespace KartGame
             GameObject mainMenu_Quit = mainMenu.transform.GetChild(2).gameObject;
             mainMenu_Quit.GetComponent<Button>().onClick.AddListener(onSelectQuit);
 
-            // okay button in server select
-            GameObject serverSelect_Okay = serverSelectMenu.transform.GetChild(1).gameObject;
-            serverSelect_Okay.GetComponent<Button>().onClick.AddListener(onSelectOkay);
+            // host button in server select
+            GameObject serverSelect_Host = serverSelectMenu.transform.GetChild(1).gameObject;
+            serverSelect_Host.GetComponent<Button>().onClick.AddListener(onSelectHost);
+
+            // connect button in server select
+            GameObject serverSelect_Connect = serverSelectMenu.transform.GetChild(2).gameObject;
+            serverSelect_Connect.GetComponent<Button>().onClick.AddListener(onSelectConnect);
 
             // track one button in track select
             GameObject trackSelect_1 = trackSelectMenu.transform.GetChild(1).gameObject;
@@ -78,10 +82,18 @@ namespace KartGame
             Application.Quit();
         }
 
-        void onSelectOkay()
+        void onSelectHost()
         {
-            Debug.Log("Okay Button pressed");
+            // start a new server instance here
+            Debug.Log("Host Button pressed");
             setMenuVisibility(false, false, true);
+        }
+
+        void onSelectConnect()
+        {
+            // send connect request to the ip the user entered
+            //      then connect to server once the server sends the "okay" signal
+            Debug.Log("Connect Button pressed");
         }
 
         void onSelectTrack1()

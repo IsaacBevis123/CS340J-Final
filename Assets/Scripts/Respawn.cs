@@ -14,6 +14,11 @@ namespace KartGame
         void Start()
         {
             player = GetComponent<Rigidbody>();
+
+            if (respawnLocation == null) 
+            {
+                respawnLocation = GameObject.FindWithTag("Respawn");
+            }
         }
 
         // Update is called once per frame
