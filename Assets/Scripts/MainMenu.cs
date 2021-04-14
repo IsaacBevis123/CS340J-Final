@@ -10,17 +10,16 @@ namespace KartGame
     {
 
         private GameObject mainMenu;
-        private GameObject serverSelectMenu;
+
         private GameObject trackSelectMenu;
 
         // Start is called before the first frame update
         void Start()
         {
             mainMenu = GameObject.FindWithTag("MainMenu_Screen1");
-            serverSelectMenu = GameObject.FindWithTag("MainMenu_Screen2");
             trackSelectMenu = GameObject.FindWithTag("MainMenu_Screen3");
 
-            setMenuVisibility(true, false, false);
+            setMenuVisibility(true, false);
             setButtonEvents();
         }
 
@@ -34,13 +33,6 @@ namespace KartGame
             GameObject mainMenu_Quit = mainMenu.transform.GetChild(2).gameObject;
             mainMenu_Quit.GetComponent<Button>().onClick.AddListener(onSelectQuit);
 
-            // host button in server select
-            GameObject serverSelect_Host = serverSelectMenu.transform.GetChild(1).gameObject;
-            serverSelect_Host.GetComponent<Button>().onClick.AddListener(onSelectHost);
-
-            // connect button in server select
-            GameObject serverSelect_Connect = serverSelectMenu.transform.GetChild(2).gameObject;
-            serverSelect_Connect.GetComponent<Button>().onClick.AddListener(onSelectConnect);
 
             // track one button in track select
             GameObject trackSelect_1 = trackSelectMenu.transform.GetChild(1).gameObject;
@@ -63,17 +55,16 @@ namespace KartGame
             trackSelect_5.GetComponent<Button>().onClick.AddListener(onSelectTrack5);
         }
 
-        void setMenuVisibility(bool menu1, bool menu2, bool menu3)
+        void setMenuVisibility(bool menu1, bool menu3)
         {
             mainMenu.SetActive(menu1);
-            serverSelectMenu.SetActive(menu2);
             trackSelectMenu.SetActive(menu3);
         }
 
         void onSelectPlay()
         {
             Debug.Log("Play Button pressed");
-            setMenuVisibility(false, true, false);
+            setMenuVisibility(false, true);
         }
 
         void onSelectQuit()
@@ -82,21 +73,6 @@ namespace KartGame
             Application.Quit();
         }
 
-        void onSelectHost()
-        {
-            // start a new server instance here
-            Debug.Log("Host Button pressed");
-            setMenuVisibility(false, false, true);
-        }
-
-        void onSelectConnect()
-        {
-            InputField input = GameObject.Find("ip_input").GetComponent<InputField>();
-            string IP = input.text;
-            // send connect request to the ip the user entered
-            //      then connect to server once the server sends the "okay" signal
-            Debug.Log("Connect Button pressed, IP is " + IP);
-        }
 
         void onSelectTrack1()
         {
