@@ -10,6 +10,7 @@ TagManager:
   - MainMenu_Screen2
   - MainMenu_Screen3
   - EscMenu
+  - Spawn
   layers:
   - Default
   - TransparentFX

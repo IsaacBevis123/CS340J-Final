@@ -5699,6 +5699,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742321050}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &750440596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 750440597}
+  m_Layer: 0
+  m_Name: Respawn
+  m_TagString: Respawn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &750440597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750440596}
+  m_LocalRotation: {x: -0.013312194, y: 0.6910805, z: 0.012732525, w: 0.722543}
+  m_LocalPosition: {x: -73.59, y: 10.77, z: 203.64}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: -2.111, y: 87.45, z: 0}
 --- !u!1 &750974200
 GameObject:
   m_ObjectHideFlags: 0
@@ -9368,7 +9398,7 @@ GameObject:
   - component: {fileID: 1214090186}
   m_Layer: 0
   m_Name: Spawn
-  m_TagString: Respawn
+  m_TagString: Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9380,13 +9410,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1214090185}
-  m_LocalRotation: {x: -0.018420959, y: 0, z: 0, w: 0.99983037}
+  m_LocalRotation: {x: -0.013312194, y: 0.6910805, z: 0.012732525, w: 0.722543}
   m_LocalPosition: {x: -73.59, y: 10.77, z: 203.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: -2.111, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -2.111, y: 87.45, z: 0}
 --- !u!1 &1218101641
 GameObject:
   m_ObjectHideFlags: 0
