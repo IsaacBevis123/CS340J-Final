@@ -12,6 +12,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3393740136349528925, guid: 627d1e62dc8584f4f8063d675e7182f8,
         type: 3}
+    - target: {fileID: 2329908880733240639, guid: 9d433f68590268c42bd7e65f77e9d383,
+        type: 3}
+      propertyPath: PrefabHash
+      value: 11194266959856389763
+      objectReference: {fileID: 0}
+    - target: {fileID: 2329908880733240639, guid: 9d433f68590268c42bd7e65f77e9d383,
+        type: 3}
+      propertyPath: PrefabHashGenerator
+      value: Player_Track1
+      objectReference: {fileID: 0}
     - target: {fileID: 3626512186702094913, guid: 9d433f68590268c42bd7e65f77e9d383,
         type: 3}
       propertyPath: m_RootOrder

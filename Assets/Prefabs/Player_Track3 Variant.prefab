@@ -11,6 +11,16 @@ PrefabInstance:
       propertyPath: respawnLocation
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2329908880733240639, guid: 9d433f68590268c42bd7e65f77e9d383,
+        type: 3}
+      propertyPath: PrefabHash
+      value: 11194266959856389761
+      objectReference: {fileID: 0}
+    - target: {fileID: 2329908880733240639, guid: 9d433f68590268c42bd7e65f77e9d383,
+        type: 3}
+      propertyPath: PrefabHashGenerator
+      value: Player_Track3
+      objectReference: {fileID: 0}
     - target: {fileID: 3626512186702094913, guid: 9d433f68590268c42bd7e65f77e9d383,
         type: 3}
       propertyPath: m_RootOrder
