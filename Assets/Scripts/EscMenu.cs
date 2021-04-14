@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using MLAPI;
 
 public class EscMenu : MonoBehaviour
 {
@@ -41,6 +42,8 @@ public class EscMenu : MonoBehaviour
         Debug.Log("Disconnecting...");
         // TODO: disconnect from server host here
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+        NetworkManager.Singleton.StopHost();
+        NetworkManager.Singleton.StopClient();
     }
 
     void onSelectQuit()
