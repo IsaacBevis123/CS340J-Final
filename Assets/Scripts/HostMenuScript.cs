@@ -12,6 +12,7 @@ public class HostMenuScript : MonoBehaviour
     public InputField inputField;
     
     public void Host(){
+        NetworkManager.Singleton.ConnectionApprovalCallback += GameObject.FindWithTag("Network").GetComponent<ConnectionApproval>().ApprovalCheck;
         NetworkManager.Singleton.StartHost();
         menuPanel.SetActive(false);
     }

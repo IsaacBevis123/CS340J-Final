@@ -14,7 +14,7 @@ namespace MLAPI
             NetworkManager.Singleton.StartHost();
         }
 
-        private void ApprovalCheck(byte[] connectionData, ulong clientId, MLAPI.NetworkManager.ConnectionApprovedDelegate callback)
+        public void ApprovalCheck(byte[] connectionData, ulong clientId, MLAPI.NetworkManager.ConnectionApprovedDelegate callback)
         {
             //Your logic here
             bool approve = true;

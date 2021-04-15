@@ -11,6 +11,7 @@ TagManager:
   - MainMenu_Screen3
   - EscMenu
   - Spawn
+  - Network
   layers:
   - Default
   - TransparentFX
