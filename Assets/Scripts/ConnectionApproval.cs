@@ -22,6 +22,10 @@ namespace MLAPI
             bool createPlayerObject = true;
             bool approve = true;
             players += 1;
+            if (players > 5)
+            {
+                players = 1;
+            }
 
             /*if (connectionData == System.Text.Encoding.ASCII.GetBytes("test")) // DANGER!!! This is magical duplicate code need a better way, but until then change line 28 of HostMenuScript
             {
