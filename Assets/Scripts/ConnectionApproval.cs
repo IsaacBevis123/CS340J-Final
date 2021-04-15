@@ -18,16 +18,18 @@ namespace MLAPI
 
         public void ApprovalCheck(byte[] connectionData, ulong clientId, MLAPI.NetworkManager.ConnectionApprovedDelegate callback)
         {
-            bool createPlayerObject = false;
-            bool approve = false;
+            Debug.Log("connectionData: " + connectionData);
+            bool createPlayerObject = true;
+            bool approve = true;
+            players += 1;
 
-            if (connectionData == System.Text.Encoding.ASCII.GetBytes("test")) // DANGER!!! This is magical duplicate code need a better way, but until then change line 28 of HostMenuScript
+            /*if (connectionData == System.Text.Encoding.ASCII.GetBytes("test")) // DANGER!!! This is magical duplicate code need a better way, but until then change line 28 of HostMenuScript
             {
-                players += 1;
+                
                 Debug.Log("Connection approved");
                 approve = true;
                 createPlayerObject = true;
-            }
+            }*/
 
             // The prefab hash. Use null to use the default player prefab
             // If using this hash, replace "MyPrefabHashGenerator" with the name of a prefab added to the NetworkPrefabs field of your NetworkManager object in the scene

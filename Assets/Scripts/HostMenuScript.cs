@@ -20,9 +20,11 @@ public class HostMenuScript : MonoBehaviour
     public void Join(){
         //clicked join
         if (inputField.text.Length <= 0){
+            Debug.Log("attempting to join 127.0.0.1......");
             NetworkManager.Singleton.GetComponent<UNetTransport>().ConnectAddress = "127.0.0.1";
         }
         else{
+            Debug.Log("attempting to join " + inputField.text);
             NetworkManager.Singleton.GetComponent<UNetTransport>().ConnectAddress = inputField.text;
         }
         NetworkManager.Singleton.NetworkConfig.ConnectionData = System.Text.Encoding.ASCII.GetBytes("test"); // this could be used to make a password to the server and/or a game version check.
