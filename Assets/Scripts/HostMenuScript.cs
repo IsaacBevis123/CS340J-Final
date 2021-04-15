@@ -25,6 +25,7 @@ public class HostMenuScript : MonoBehaviour
         else{
             NetworkManager.Singleton.GetComponent<UNetTransport>().ConnectAddress = inputField.text;
         }
+        NetworkManager.Singleton.NetworkConfig.ConnectionData = System.Text.Encoding.ASCII.GetBytes("test"); // this could be used to make a password to the server and/or a game version check.
         NetworkManager.Singleton.StartClient();
         menuPanel.SetActive(false);
     }
