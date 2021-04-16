@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 346315048830027112}
   - component: {fileID: 346315048830027118}
   - component: {fileID: 346315048830027119}
+  - component: {fileID: 5696797010414588185}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -83,6 +84,18 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346315048830027113}
   m_Enabled: 1
+--- !u!114 &5696797010414588185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346315048830027113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bb16a52be59144aa26e4ed62fa43c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1757674211864545484
 GameObject:
   m_ObjectHideFlags: 0
@@ -3117,7 +3130,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3935493158094317162}
   - component: {fileID: 3935493158094317163}
-  - component: {fileID: 9097880135525262770}
   - component: {fileID: 3935493158094317160}
   - component: {fileID: 3935493158094317164}
   - component: {fileID: 3935493158094317175}
@@ -3169,18 +3181,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &9097880135525262770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3935493158094317165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3bb16a52be59144aa26e4ed62fa43c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3935493158094317160
 MonoBehaviour:
   m_ObjectHideFlags: 0
