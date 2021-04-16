@@ -22,7 +22,8 @@ public class DeleteCameraOnLoad : NetworkBehaviour
         if (!IsOwner)
         {
             Debug.Log("removing second camera...");
-            GetComponent<Camera>().enabled = false;
+            GetComponent<Camera>().enabled = false;     // disable the connecting client's camera so it doesn't show up for the host
+            GetComponent<AudioListener>().enabled = false;
         }
     }
 
