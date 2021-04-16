@@ -71,6 +71,7 @@ GameObject:
   m_Component:
   - component: {fileID: 895422485484010752}
   - component: {fileID: 895422485484010753}
+  - component: {fileID: -4597782072551690244}
   - component: {fileID: 895422485484010754}
   - component: {fileID: 895422485484010758}
   - component: {fileID: 895422485484010781}
@@ -122,6 +123,18 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-4597782072551690244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895422485484010759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bb16a52be59144aa26e4ed62fa43c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &895422485484010754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4258,7 +4271,6 @@ MonoBehaviour:
   StartSound: {fileID: 5419459461447776551}
   IdleSound: {fileID: 5419459461900102342}
   RunningSound: {fileID: 5419459461895746438}
-  Drift: {fileID: 0}
   RunningSoundMaxVolume: 1
   RunningSoundMaxPitch: 1
   ReverseSound: {fileID: 7039451903508416745}
