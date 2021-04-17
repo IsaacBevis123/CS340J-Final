@@ -20,7 +20,6 @@ public class MainMenuManager : MonoBehaviour
 
 
     public void Quit(){
-        UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
 

@@ -12804,6 +12804,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EscMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 1925661362453885033, guid: 73e3cba8bb38ce546b1d3a5b31dc3d16,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1925661362453885038, guid: 73e3cba8bb38ce546b1d3a5b31dc3d16,
         type: 3}
       propertyPath: m_Pivot.x
