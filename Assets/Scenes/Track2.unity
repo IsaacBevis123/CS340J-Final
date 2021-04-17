@@ -10525,7 +10525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuPanel: {fileID: 186611417}
-  inputJoin: {fileID: 0}
+  inputJoin: {fileID: 2056911604}
 --- !u!1 &1777927467
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu_LoadDemo : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    private GameObject mainCamera;
+    public GameObject mainCamera;
+    public UnityEngine.Video.VideoClip playedVideo;
     private UnityEngine.Video.VideoPlayer videoPlayer;
 
     void Start()
     {
-        mainCamera = GameObject.FindWithTag("MainCamera");
 
         videoPlayer = mainCamera.AddComponent<UnityEngine.Video.VideoPlayer>();
 
@@ -30,8 +30,7 @@ public class MainMenu_LoadDemo : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
         try
         {
-            videoPlayer.url = "Assets/Videos/" + name + ".mp4";
-
+            videoPlayer.clip = playedVideo;
             videoPlayer.targetCameraAlpha = 1.0f;
             videoPlayer.Play();
         }

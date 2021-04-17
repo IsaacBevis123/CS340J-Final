@@ -699,6 +699,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8929f854a8f014d8342b62eccb2dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1148080174}
+  playedVideo: {fileID: 32900000, guid: d90c24b2ca3cd9a47965b8c279de2e05, type: 3}
 --- !u!114 &728465901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -939,6 +941,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8929f854a8f014d8342b62eccb2dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1148080174}
+  playedVideo: {fileID: 0}
 --- !u!1 &911146953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1460,6 +1464,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8929f854a8f014d8342b62eccb2dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1148080174}
+  playedVideo: {fileID: 0}
 --- !u!114 &1274028733
 MonoBehaviour:
   m_ObjectHideFlags: 0

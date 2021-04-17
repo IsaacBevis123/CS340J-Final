@@ -6712,7 +6712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuPanel: {fileID: 1129303315}
-  inputField: {fileID: 1991321752}
+  inputJoin: {fileID: 1991321752}
 --- !u!114 &887933517
 MonoBehaviour:
   m_ObjectHideFlags: 0
