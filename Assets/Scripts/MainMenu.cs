@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-namespace KartGame
-{
+
     public class MainMenu : MonoBehaviour
     {
 
@@ -13,6 +12,8 @@ namespace KartGame
 
         private GameObject trackSelectMenu;
 
+        public GameObject PlayButton;
+        public GameObject QuitButton;
         // Start is called before the first frame update
         void Start()
         {
@@ -61,7 +62,7 @@ namespace KartGame
             trackSelectMenu.SetActive(menu3);
         }
 
-        void onSelectPlay()
+        public void onSelectPlay()
         {
             Debug.Log("Play Button pressed");
             setMenuVisibility(false, true);
@@ -102,4 +103,4 @@ namespace KartGame
             Debug.Log("Loading track 5...");
         }
     }
-}
+
