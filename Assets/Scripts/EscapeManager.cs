@@ -9,6 +9,9 @@ public class EscapeManager : MonoBehaviour
 {
     public GameObject escapeMenu;
     // Start is called before the first frame update
+    void Start(){
+        escapeMenu.SetActive(false);
+    }
 
     // Update is called once per frame
     void Update()
@@ -17,9 +20,8 @@ public class EscapeManager : MonoBehaviour
         {
             Debug.Log("toggling esc menu");
             escapeMenu.SetActive(!escapeMenu.activeSelf);
-
             GameObject player = GameObject.FindWithTag("Player");
-            player.GetComponent<KartGame.KartSystems.ArcadeKart>().enabled = false;
+            player.GetComponent<KartGame.KartSystems.ArcadeKart>().enabled = !player.GetComponent<KartGame.KartSystems.ArcadeKart>().enabled;
         }
     }
     
