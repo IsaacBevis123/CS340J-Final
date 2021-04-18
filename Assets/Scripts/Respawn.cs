@@ -30,6 +30,10 @@ namespace KartGame
                 Debug.Log("Respawning player...");
                 respawnPlayer();
             }
+            if (Input.GetKeyDown(KeyCode.R)){
+                Debug.Log("Respawning player...");
+                respawnPlayer();
+            }
         }
 
         void respawnPlayer()
